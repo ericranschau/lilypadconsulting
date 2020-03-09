@@ -1,0 +1,350 @@
+/*
+Theme Name: Lily Pad Consulting
+Text Domain: lilypadconsulting
+Version: 0.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: A custom theme for WordPress created for Lily Pad Consulting by LaPorte Design.
+Tags: 
+Author: LaPorte Design
+Author URI: http://www.laporte.design/
+Theme URI: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	CSS Reset
+	1. 	Document Setup
+    2. 	Element Base
+    3.  Bootstrap Overrides
+	4. 	Site Header
+
+----------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
+
+
+html,
+body {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+big,
+cite,
+code,
+em,
+font,
+img,
+small,
+strike,
+sub,
+sup,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tr,
+th,
+td {
+	border: none;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
+}
+
+blockquote::before,
+blockquote::after {
+	content: "";
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	1. Document Setup
+/* -------------------------------------------------------------------------- */
+
+:root {
+    --brand-primary:        #405D6F;
+    --brand-secondary:      #A9B240;
+    --font-color:           #405D6F;
+}
+
+html {
+	font-size: 125%; /* 1rem = 20px */
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+	background: #FFFFFF;
+	box-sizing: border-box;
+	color: var(--font-color);
+	font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 168px;
+	text-align: left;
+}
+
+body.isScrolled {
+    margin-top: 112px;
+}
+
+/* Skip Link --------------------------------- */
+
+.skip-link {
+	left: -9999rem;
+	top: 2.5rem;
+	z-index: 999999999;
+	text-decoration: underline;
+}
+
+.skip-link:focus {
+	display: block;
+	left: 6px;
+	top: 7px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	z-index: 100000;
+	right: auto;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	2. Element Base
+/* -------------------------------------------------------------------------- */
+
+
+main {
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.faux-heading {
+    font-family: sorts-mill-goudy, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 500;
+    line-height: 1.25;
+    text-transform: capitalize;
+}
+
+h1,
+.heading-size-1 {
+	font-family: ltc-goudy-oldstyle-pro, sorts-mill-goudy, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+h2,
+.heading-size-2 {
+	font-size: 4rem;
+}
+
+h3,
+.heading-size-2 {
+	font-size: 2.4rem;
+}
+
+nav {
+    background-color: var(--brand-primary);
+    color: #FFFFFF;
+    left: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 168px;
+    transition: all 0.15s;
+    width: 100%;
+}
+
+nav.isOpen {
+    max-height: 800px;
+}
+
+nav dl {
+    margin-bottom: 0px;
+}
+
+nav dl > dd {
+    font-size: 1rem;
+    font-family: eb-garamond, sorts-mill-goudy, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+nav dl > dd:last-child {
+    margin-bottom: 0rem;
+}
+
+nav dl > dt {
+    font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+nav dl > dt::before {
+    background-color: var(--brand-secondary);
+    height: 100%;
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 2px;
+}
+
+nav .container {
+    margin: 100px 0px;
+}
+
+@media (min-width: 768px) {
+    nav .container {
+        margin: 200px 0px;
+    }
+}
+
+small {
+    font-size: 0.5rem;
+}
+
+body.isScrolled nav {
+    top: 112px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	3. Bootstrap Overrides
+/* -------------------------------------------------------------------------- */
+
+/* Buttons ----------------------------------- */
+.btn {
+    background-color: #FFFFFF;
+    border: 2px solid var(--brand-primary);
+    border-radius: 8px;
+    color: var(--brand-primary);
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 16px 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    color: var(--brand-primary);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: var(--brand-primary);
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    color: var(--brand-primary);
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	4. Site Header
+/* -------------------------------------------------------------------------- */
+
+#site-header {
+    background-color: #FFFFFF;
+    height: 168px;
+    left: 0px;
+    padding: 24px;
+    position: fixed;
+    text-align: center;
+    transition: all 0.15s;
+    top: 0px;
+    width: 100%;
+}
+
+#site-header-button {
+    background-color: transparent;
+    margin-bottom: 1.2rem;
+}
+
+#site-header-logo {
+    height: auto;
+    width: 170px;
+}
+
+#site-header.isOpen {
+    background-color: var(--brand-primary);
+    color: #FFFFFF;
+}
+
+#site-header.isOpen #site-header-button {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    #site-header {
+        align-items: center;
+        display: flex;
+        text-align: left;
+        transition: height 0.15s;
+    }
+
+    #site-header-button {
+        float: right;
+        margin-bottom: 0px;
+    }
+
+    #site-header-logo {
+        height: auto;
+        width: 204px;
+    }
+
+    body.isScrolled #site-header {
+        height: 112px;
+    }
+}
