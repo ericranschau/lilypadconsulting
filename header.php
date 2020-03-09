@@ -32,7 +32,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
-						<button class="btn btn-primary" id="site-header-button" type="button">Contact Us</button>
+						<button class="btn btn-primary" data-alt="Close" data-default="Contact Us" id="site-header-button" type="button">Contact Us</button>
 					</div>
 					<div class="col-md-8 offset-md-1 order-md-first">
 						<img id="site-header-logo" data-alt="<?php echo get_template_directory_uri() ?>/assets/images/logos/lilypad_reversed.svg" data-default="<?php echo get_template_directory_uri() ?>/assets/images/logos/lilypad.svg" src="<?php echo get_template_directory_uri() ?>/assets/images/logos/lilypad.svg">
@@ -42,10 +42,11 @@
         </header>
 		<nav id="nav">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-4 offset-md-1">
+				<div class="row ml-3 ml-md-0 mr-3 mr-md-0">
+					<div class="col-md-5 mb-5 mb-md-0 offset-md-1 position-relative">
 						<h3>Get In Touch</h3>
-						<a class="btn" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+						<a class="btn btn-secondary" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+						<small>© 2020 Lily Pad Consulting. All rights reserved</small>
 					</div>
 					<div class="col-md-5">
 						<dl>
@@ -56,11 +57,6 @@
 							<dt>Locations</dt>
 							<dd>Minneapolis/St. Paul, MN<br />Phoenix, AZ</dd>
 						</dl>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-10 offset-md-1">
-						<small>© 2020 Lily Pad Consulting. All rights reserved</small>
 					</div>
 				</div>
 			</div>
