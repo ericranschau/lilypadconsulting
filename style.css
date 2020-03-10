@@ -324,21 +324,20 @@ small {
     color: var(--brand-primary);
 }
 
-.btn-primary:focus {
-    color: var(--brand-primary);
+.btn-primary:focus,
+.btn-primary:hover {
+    background-color: var(--brand-primary);
+    color: #FFFFFF;
 }
 
 .btn-secondary {
     background-color: transparent;
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
+    padding: 12px;
 }
 
-.btn-secondary:focus {
-    background-color: transparent;
-    border: 2px solid #FFFFFF;
-}
-
+.btn-secondary:focus,
 .btn-secondary:hover {
     background-color: transparent;
     border: 2px solid #FFFFFF;
@@ -364,7 +363,6 @@ small {
 }
 
 #site-header-button {
-    background-color: transparent;
     margin-bottom: 1.2rem;
     min-width: 135px;
 }
@@ -378,10 +376,16 @@ small {
     background-color: var(--brand-primary);
     color: #FFFFFF;
 }
-
 #site-header.isOpen #site-header-button {
-    border-color: #FFFFFF;
+    background-color: var(--brand-primary);
+    border: 2px solid #FFFFFF;
     color: #FFFFFF;
+}
+
+#site-header.isOpen #site-header-button:focus,
+#site-header.isOpen #site-header-button:hover {
+    background-color: #FFFFFF;
+    color: var(--brand-primary);
 }
 
 @media (min-width: 768px) {
