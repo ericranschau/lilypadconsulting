@@ -165,27 +165,153 @@ h4,
 h5,
 h6,
 .faux-heading {
-    font-family: sorts-mill-goudy, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: eb-garamond, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 500;
-    line-height: 1.25;
+    line-height: 1;
     text-transform: capitalize;
 }
 
 h1,
 .heading-size-1 {
-	font-family: ltc-goudy-oldstyle-pro, sorts-mill-goudy, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 4rem;
-	font-weight: 700;
+	font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+}
+
+@media (min-width: 768px) {
+    h1,
+    .heading-size-1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    h1,
+    .heading-size-1 {
+        font-size: 6rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1,
+    .heading-size-1 {
+        font-size: 7.2rem;
+        margin-bottom: 3.6rem;
+    }
 }
 
 h2,
 .heading-size-2 {
-	font-size: 4rem;
+	font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+@media (min-width: 768px) {
+    h2,
+    .heading-size-2 {
+        font-size: 2.4rem;
+        margin-bottom: 3.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    h2,
+    .heading-size-2 {
+        font-size: 3rem;
+        margin-bottom: 4.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h2,
+    .heading-size-2 {
+        font-size: 4rem;
+        margin-bottom: 6.6rem;
+    }
 }
 
 h3,
-.heading-size-2 {
-	font-size: 2.4rem;
+.heading-size-3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    h3,
+    .heading-size-3 {
+        font-size: 1.8rem;
+        margin-bottom: 1.1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    h3,
+    .heading-size-3 {
+        font-size: 2rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h3,
+    .heading-size-3 {
+        font-size: 2.4rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+h4,
+.heading-size-4 {
+    font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+    h4,
+    .heading-size-4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.9rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h4,
+    .heading-size-4 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+h5,
+.heading-size-5 {
+    display: inline-block;
+    font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 0rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+    h5,
+    .heading-size-5 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h5,
+    .heading-size-5 {
+        font-size: 1.4rem;
+    }
 }
 
 nav {
@@ -198,6 +324,7 @@ nav {
     top: 168px;
     transition: all 0.15s;
     width: 100%;
+    z-index: 1;
 }
 
 nav.isOpen {
@@ -257,6 +384,10 @@ nav h3 {
     margin-bottom: 0.6rem;
 }
 
+p {
+    line-height: 2rem;
+}
+
 @media (min-width: 768px) {
     nav h3 {
         font-size: 2.4rem;
@@ -286,6 +417,18 @@ nav .container {
     nav .container {
         margin-bottom: 200px;
         margin-top: 200px;
+    }
+}
+
+section {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding-bottom: 2rem;
+        padding-top: 8rem;
     }
 }
 
@@ -344,6 +487,47 @@ small {
     color: #FFFFFF;
 }
 
+/* Grid -------------------------------------- */
+.row.hr {
+    margin-bottom: 1.3rem;
+    position: relative;
+}
+
+.row.hr::before {
+    background-color: var(--brand-secondary);
+    content: '';
+    height: 100%;
+    left: 15px;
+    position: absolute;
+    top: 0px;
+    width: 2px;
+}
+
+.row.hr h5 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .row.hr::before {
+        height: 2px;
+        right: 15px;
+        top: 50%;
+        width: auto;
+    }
+
+    .row.hr h5 {
+        background-color: #FFFFFF;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+/* .row.hr > * {
+    margin-left: 15px;
+    margin-right: 15px;
+} */
+
 
 /* -------------------------------------------------------------------------- */
 
@@ -360,6 +544,7 @@ small {
     transition: all 0.15s;
     top: 0px;
     width: 100%;
+    z-index: 2;
 }
 
 #site-header-button {
