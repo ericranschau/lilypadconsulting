@@ -29,7 +29,8 @@ with others.
     2. 	Element Base
     3.  Bootstrap Overrides
     4. 	Site Header
-    5.  Other
+    5.  Site Footer
+    6.  Other
 
 ----------------------------------------------------------------------------- */
 
@@ -100,6 +101,7 @@ blockquote::after {
     --brand-primary:        #405D6F;
     --brand-primary-light:  #577181;
     --brand-secondary:      #A9B240;
+    --color-white:          #FFFFFF;
     --font-color:           #405D6F;
 }
 
@@ -115,7 +117,7 @@ html {
 }
 
 body {
-	background: #FFFFFF;
+	background: var(--color-white);
 	box-sizing: border-box;
 	color: var(--font-color);
 	font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
@@ -298,7 +300,6 @@ h4,
 
 h5,
 .heading-size-5 {
-    display: inline-block;
     font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -334,7 +335,7 @@ h6 {
 
 nav {
     background-color: var(--brand-primary);
-    color: #FFFFFF;
+    color: var(--color-white);
     left: 0px;
     max-height: 0px;
     overflow: hidden;
@@ -487,7 +488,7 @@ ul > li {
 }
 
 .btn-primary {
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     color: var(--brand-primary);
 }
 
@@ -498,21 +499,21 @@ ul > li {
 .btn-primary:focus,
 .btn-primary:hover {
     background-color: var(--brand-primary);
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .btn-secondary {
     background-color: transparent;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
     padding: 12px;
 }
 
 .btn-secondary:focus,
 .btn-secondary:hover {
     background-color: transparent;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
 }
 
 .btn-withIcon {
@@ -535,7 +536,7 @@ ul > li {
 }
 
 .btn-withIcon:hover {
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 /* Grid -------------------------------------- */
@@ -543,7 +544,236 @@ ul > li {
     margin-bottom: 6rem;
 }
 
-.row.hr {
+
+/* -------------------------------------------------------------------------- */
+/*	4. Site Header
+/* -------------------------------------------------------------------------- */
+
+#site-header {
+    background-color: var(--color-white);
+    height: 168px;
+    left: 0px;
+    padding: 24px;
+    position: fixed;
+    text-align: center;
+    transition: all 0.15s;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+#site-header-button {
+    margin-bottom: 1.2rem;
+    min-width: 135px;
+}
+
+#site-header-logo {
+    height: auto;
+    width: 170px;
+}
+
+#site-header.isOpen {
+    background-color: var(--brand-primary);
+    color: var(--color-white);
+}
+#site-header.isOpen #site-header-button {
+    background-color: var(--brand-primary);
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+#site-header.isOpen #site-header-button:focus,
+#site-header.isOpen #site-header-button:hover {
+    background-color: var(--color-white);
+    color: var(--brand-primary);
+}
+
+@media (min-width: 768px) {
+    #site-header {
+        align-items: center;
+        display: flex;
+        text-align: left;
+        transition: height 0.15s;
+    }
+
+    #site-header-button {
+        float: right;
+        margin-bottom: 0px;
+    }
+
+    #site-header-logo {
+        height: auto;
+        width: 204px;
+    }
+
+    body.isScrolled #site-header {
+        height: 112px;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	5. Site Footer
+/* -------------------------------------------------------------------------- */
+
+#site-footer {
+    background-color: var(--brand-primary);
+    color: var(--color-white);
+    padding: 2rem 0px;
+    position: relative;
+}
+
+#site-footer dl {
+    margin-bottom: 0px;
+}
+
+#site-footer dl > dd {
+    font-size: 1.1rem;
+    font-family: eb-garamond, sorts-mill-goudy, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+}
+
+@media (min-width: 768px) {
+    #site-footer dl > dd {
+        font-size: 1.3rem;
+    }
+}
+
+#site-footer dl > dd:last-child {
+    margin-bottom: 0rem;
+}
+
+#site-footer dl > dt {
+    font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#site-footer dl > dt::before {
+    background-color: var(--brand-secondary);
+    height: 100%;
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 2px;
+}
+
+#site-footer small {
+    display: none;
+    margin-top: 1.4rem;
+}
+
+@media (min-width: 768px) {
+    #site-footer small {
+        bottom: 10px;
+        display: block;
+        left: 10px;
+        position: absolute;
+    }
+}
+
+#site-footer-bg {
+    background-image: url('./assets/images/footerBg.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 1440px 612px;
+    height: 150px;
+    left: 0px;
+    position: absolute;
+    top: -150px;
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	6. Other
+/* -------------------------------------------------------------------------- */
+
+.bioPic {
+    box-shadow: 0px 8px 64px 0px rgba(64,93,111,0.32);
+    -webkit-box-shadow: 0px 8px 64px 0px rgba(64,93,111,0.32);
+    height: auto;
+    margin: 0 0px 1rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .bioPic {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+    }
+}
+
+.hr {
+    margin-bottom: 4rem;
+    padding-bottom: 1.5em;
+    position: relative;
+    text-align: center;
+}
+
+.hr::before {
+    border-bottom-color: var(--brand-secondary);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    content: '';
+    height: 100%;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    top: 0px;
+    width: 40px;
+}
+
+.hr.hr-left {
+    border-left: 2px solid var(--brand-secondary);
+    margin-bottom: 2rem;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.hr.hr-left::before {
+    content: none;
+}
+
+@media (min-width: 768px) {
+    .hr.hr-left {
+        border-left: none;
+        display: inline-block;
+        padding-left: 0px;
+    }
+
+    .hr.hr-left::after {
+        border-bottom-color: var(--brand-secondary);
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        content: '';
+        height: 50%;
+        left: calc(100% + 15px);
+        position: absolute;
+        width: 1000%;
+    }
+
+    .hr.hr-left::before {
+        border-bottom-color: var(--brand-secondary);
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        content: '';
+        height: 50%;
+        left: auto;
+        right: calc(100% + 15px);
+        position: absolute;
+        width: 1000%;
+    }
+}
+
+/* .row.hr {
     margin-bottom: 1.3rem;
     position: relative;
 }
@@ -572,7 +802,7 @@ ul > li {
     }
 
     .row.hr h5 {
-        background-color: #FFFFFF;
+        background-color: var(--color-white);
         margin-left: -15px;
         margin-right: -15px;
     }
@@ -611,80 +841,4 @@ ul > li {
     top: calc(50% - 1px);
     width: 45px;
     z-index: -1;
-}
-
-
-/* -------------------------------------------------------------------------- */
-/*	4. Site Header
-/* -------------------------------------------------------------------------- */
-
-#site-header {
-    background-color: #FFFFFF;
-    height: 168px;
-    left: 0px;
-    padding: 24px;
-    position: fixed;
-    text-align: center;
-    transition: all 0.15s;
-    top: 0px;
-    width: 100%;
-    z-index: 2;
-}
-
-#site-header-button {
-    margin-bottom: 1.2rem;
-    min-width: 135px;
-}
-
-#site-header-logo {
-    height: auto;
-    width: 170px;
-}
-
-#site-header.isOpen {
-    background-color: var(--brand-primary);
-    color: #FFFFFF;
-}
-#site-header.isOpen #site-header-button {
-    background-color: var(--brand-primary);
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
-}
-
-#site-header.isOpen #site-header-button:focus,
-#site-header.isOpen #site-header-button:hover {
-    background-color: #FFFFFF;
-    color: var(--brand-primary);
-}
-
-@media (min-width: 768px) {
-    #site-header {
-        align-items: center;
-        display: flex;
-        text-align: left;
-        transition: height 0.15s;
-    }
-
-    #site-header-button {
-        float: right;
-        margin-bottom: 0px;
-    }
-
-    #site-header-logo {
-        height: auto;
-        width: 204px;
-    }
-
-    body.isScrolled #site-header {
-        height: 112px;
-    }
-}
-
-
-/* -------------------------------------------------------------------------- */
-/*	5. Other
-/* -------------------------------------------------------------------------- */
-
-.bioPic {
-    margin: 0 15px;
-}
+} */

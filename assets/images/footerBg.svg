@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="612px" viewBox="0 0 1440 612" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Accent</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Layout/XL" transform="translate(0.000000, -9818.000000)" fill="#405D6F">
+            <g id="Footer" transform="translate(-280.000000, 9818.000000)">
+                <path d="M368.167791,1219 C481.996151,1219 582.279307,1146.13762 687.884098,1105.06538 C1015.952,977.560425 1213.97485,1240.90743 1564.90829,1132.21027 C2007.04353,995.179613 2153.89846,458.241687 1809.25966,149.769397 C1706.80432,58.0992196 1569.98667,0 1416.59812,0 C1243.85624,0 1103.77391,89.2887522 981.717714,191.202839 C911.798175,249.659062 843.449096,305.137454 773.772808,352.522359 C497.359331,540.390363 257.360857,430.143387 96.3504656,599.321191 C-111.833423,818.025924 34.902014,1219 368.167791,1219 Z" id="Accent" transform="translate(1000.000000, 609.500000) scale(1, -1) translate(-1000.000000, -609.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

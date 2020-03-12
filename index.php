@@ -52,9 +52,9 @@ get_header();
 
     <!-- Building Capacity -->
     <section class="container">
-        <div class="row hr">
+        <div class="row overflow-hidden">
             <div class="col-md-9 offset-md-2">
-                <h5>Organization Development</h5>
+                <h5 class="hr hr-left">Organization Development</h5>
             </div>
         </div>
         <div class="row">
@@ -83,9 +83,9 @@ get_header();
 
     <!-- Equipping Your Board -->
     <section class="container">
-        <div class="row hr">
+        <div class="row overflow-hidden">
             <div class="col-md-9 offset-md-2">
-                <h5>Board of Director Governance</h5>
+                <h5 class="hr hr-left">Board of Director Governance</h5>
             </div>
         </div>
         <div class="row">
@@ -109,9 +109,9 @@ get_header();
 
     <!-- Charting Direction -->
     <section class="container">
-        <div class="row hr">
+        <div class="row overflow-hidden">
             <div class="col-md-9 offset-md-2">
-                <h5>Visioning &amp; Strategy</h5>
+                <h5 class="hr hr-left">Visioning &amp; Strategy</h5>
             </div>
         </div>
         <div class="row">
@@ -135,9 +135,9 @@ get_header();
 
     <!-- Our Team -->
     <section class="container">
-        <div class="row hr hr_centered">
+        <div class="row">
             <div class="col-12">
-                <h5>Our Team</h5>
+                <h5 class="hr">Our Team</h5>
             </div>
         </div>
         <div class="row mb-10">
@@ -167,9 +167,9 @@ get_header();
 
     <!-- Community Support -->
     <section class="container">
-        <div class="row hr hr_centered">
+        <div class="row">
             <div class="col-12">
-                <h5>Community Support</h5>
+                <h5 class="hr">Community Support</h5>
             </div>
         </div>
         <div class="row mb-10">
