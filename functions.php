@@ -77,8 +77,8 @@ function lilypadconsulting_register_styles() {
     // Add Bootstrap CSS.
     wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap/bootstrap.css' );
     
-    // Add Typekit CSS.
-    wp_enqueue_style( 'typekit-css', '//use.typekit.net/ejh1xue.css' );
+    // Add Custom Fonts CSS.
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,700,700i|Lato:400,400i,700,700i|Sorts+Mill+Goudy:400,400i&display=swap');
 
 	wp_enqueue_style( 'lilypadconsulting-style', get_stylesheet_uri(), array(), $theme_version );
 

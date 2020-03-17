@@ -120,7 +120,7 @@ body {
 	background: var(--color-white);
 	box-sizing: border-box;
 	color: var(--font-color);
-	font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1rem;
     margin-top: 168px;
 	text-align: left;
@@ -174,7 +174,7 @@ h4,
 h5,
 h6,
 .faux-heading {
-    font-family: eb-garamond, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'EB Garamond', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 500;
     line-height: 1;
     text-transform: capitalize;
@@ -274,7 +274,7 @@ h3,
 
 h4,
 .heading-size-4 {
-    font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
@@ -300,7 +300,7 @@ h4,
 
 h5,
 .heading-size-5 {
-    font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
@@ -324,7 +324,7 @@ h5,
 
 h6 {
     color: var(--brand-primary-light);
-    font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.2em;
@@ -362,7 +362,7 @@ nav dl {
 
 nav dl > dd {
     font-size: 1.1rem;
-    font-family: eb-garamond, sorts-mill-goudy, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'EB Garamond', 'Sorts Mill Goudy', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 600;
     margin-bottom: 1.4rem;
 }
@@ -378,7 +378,7 @@ nav dl > dd:last-child {
 }
 
 nav dl > dt {
-    font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.15em;
@@ -629,7 +629,7 @@ ul > li {
 
 #site-footer dl > dd {
     font-size: 1.1rem;
-    font-family: eb-garamond, sorts-mill-goudy, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'EB Garamond', 'Sorts Mill Goudy', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 600;
     margin-bottom: 1.4rem;
 }
@@ -645,7 +645,7 @@ ul > li {
 }
 
 #site-footer dl > dt {
-    font-family: lato, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.15em;
