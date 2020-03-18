@@ -710,6 +710,60 @@ ul > li {
     }
 }
 
+.graphic {
+    background-position: right 100px;
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+}
+
+.graphic.graphic-development {
+    background-image: url('./assets/images/graphics/development.svg');
+}
+
+.graphic.graphic-governance {
+    background-image: url('./assets/images/graphics/governance.svg');
+}
+
+.graphic.graphic-solutions {
+    background-image: url('./assets/images/graphics/solutions.svg');
+}
+
+.graphic.graphic-strategy {
+    background-image: url('./assets/images/graphics/strategy.svg');
+}
+
+@media (min-width: 576px) {
+    .graphic {
+        background-position: right 100px;
+        background-size: 270px auto;
+    }
+
+    .graphic-left {
+        background-position-x: 0px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .graphic {
+        background-position: right 320px;
+        background-size: 370px auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .graphic {
+        background-position: right 420px;
+        background-size: 446px auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .graphic {
+        background-position: right 480px;
+        background-size: 446px auto;
+    }
+}
+
 .hr {
     margin-bottom: 4rem;
     padding-bottom: 1.5em;

@@ -22,7 +22,7 @@ get_header();
     <section class="container">
         <div class="row">
             <div class="col-md-10 offset-md-1">
-                <img class="lilypad" src="<?php echo get_template_directory_uri() ?>/assets/images/lilypad.png" />
+                <img class="lilypad" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypad.png" />
                 <h1 class="heading-size-2 text-center">Growing Leaders.<br /> Developing Organizations.<br />Achieving Results.</h1>
             </div>
         </div>
@@ -36,7 +36,7 @@ get_header();
     </section>
 
     <!-- Seizing Opportunities -->
-    <section class="container">
+    <section class="container graphic graphic-left graphic-solutions">
         <div class="row">
             <div class="col-md-10 offset-md-2">
                 <h1 class="heading-size-1 withMargin">Seizing Opportunities</h1>
@@ -52,7 +52,7 @@ get_header();
     </section>
 
     <!-- Building Capacity -->
-    <section class="container">
+    <section class="container graphic graphic-development">
         <div class="row overflow-hidden">
             <div class="col-md-9 offset-md-2">
                 <h5 class="hr hr-left">Organization Development</h5>
@@ -83,7 +83,7 @@ get_header();
     </section>
 
     <!-- Equipping Your Board -->
-    <section class="container">
+    <section class="container graphic graphic-governance">
         <div class="row overflow-hidden">
             <div class="col-md-9 offset-md-2">
                 <h5 class="hr hr-left">Board of Director Governance</h5>
@@ -109,7 +109,7 @@ get_header();
     </section>
 
     <!-- Charting Direction -->
-    <section class="container">
+    <section class="container graphic graphic-strategy">
         <div class="row overflow-hidden">
             <div class="col-md-9 offset-md-2">
                 <h5 class="hr hr-left">Visioning &amp; Strategy</h5>
@@ -138,7 +138,7 @@ get_header();
     <section class="container">
         <div class="row">
             <div class="col-12">
-                <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/lilypad.png" />
+                <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypad.png" />
                 <h5 class="hr">Our Team</h5>
             </div>
         </div>
@@ -171,7 +171,7 @@ get_header();
     <section class="container">
         <div class="row">
             <div class="col-12">
-                <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/lilypad.png" />
+                <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypad.png" />
                 <h5 class="hr">Community Support</h5>
             </div>
         </div>
