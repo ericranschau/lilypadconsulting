@@ -772,3 +772,52 @@ ul > li {
         width: 1000%;
     }
 }
+
+.lilypad {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: -30px;
+    width: 140px;
+}
+
+.lilypad.lilypad-small {
+    margin-bottom: -40px;
+    width: 120px;
+}
+
+@media (min-width: 576px) {
+    .lilypad {
+        margin-bottom: -45px;
+        width: 200px;
+    }
+
+    .lilypad.lilypad-small {
+        margin-bottom: -40px;
+        width: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    .lilypad {
+        margin-bottom: -55px;
+        width: 240px;
+    }
+
+    .lilypad.lilypad-small {
+        margin-bottom: -45px;
+        width: 160px;
+    }
+}
+
+@media (min-width: 992px) {
+    .lilypad {
+        margin-bottom: -70px;
+        width: 320px;
+    }
+
+    .lilypad.lilypad-small {
+        margin-bottom: -45px;
+        width: 160px;
+    }
+}

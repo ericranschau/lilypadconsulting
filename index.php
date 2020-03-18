@@ -22,6 +22,7 @@ get_header();
     <section class="container">
         <div class="row">
             <div class="col-md-10 offset-md-1">
+                <img class="lilypad" src="<?php echo get_template_directory_uri() ?>/assets/images/lilypad.png" />
                 <h1 class="heading-size-2 text-center">Growing Leaders.<br /> Developing Organizations.<br />Achieving Results.</h1>
             </div>
         </div>
@@ -137,6 +138,7 @@ get_header();
     <section class="container">
         <div class="row">
             <div class="col-12">
+                <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/lilypad.png" />
                 <h5 class="hr">Our Team</h5>
             </div>
         </div>
@@ -169,6 +171,7 @@ get_header();
     <section class="container">
         <div class="row">
             <div class="col-12">
+                <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/lilypad.png" />
                 <h5 class="hr">Community Support</h5>
             </div>
         </div>
