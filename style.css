@@ -122,12 +122,18 @@ body {
 	color: var(--font-color);
 	font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1rem;
-    margin-top: 168px;
+    margin-top: 94px;
 	text-align: left;
 }
 
 body.isScrolled {
     margin-top: 112px;
+}
+
+@media (min-width: 768px) {
+    body {
+        margin-top: 168px;
+    }
 }
 
 /* Skip Link --------------------------------- */
@@ -340,10 +346,16 @@ nav {
     max-height: 0px;
     overflow: hidden;
     position: fixed;
-    top: 168px;
+    top: 94px;
     transition: all 0.15s;
     width: 100%;
     z-index: 1;
+}
+
+@media (min-width: 768px) {
+    nav {
+        top: 168px;
+    }
 }
 
 nav.isOpen {
@@ -438,6 +450,11 @@ nav .container {
 section {
     padding-bottom: 2rem;
     padding-top: 2rem;
+}
+
+section.mix_nopad {
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 @media (min-width: 768px) {
@@ -551,7 +568,7 @@ ul > li {
 
 #site-header {
     background-color: var(--color-white);
-    height: 168px;
+    height: auto;
     left: 0px;
     padding: 24px;
     position: fixed;
@@ -562,14 +579,26 @@ ul > li {
     z-index: 2;
 }
 
+@media (min-width: 768px) {
+    #site-header {
+        height: 168px;
+    }
+}
+
 #site-header-button {
-    margin-bottom: 1.2rem;
     min-width: 135px;
 }
 
 #site-header-logo {
+    display: none;
     height: auto;
     width: 170px;
+}
+
+@media (min-width: 768px) {
+    #site-header-logo {
+        display: block;
+    }
 }
 
 #site-header.isOpen {
@@ -766,16 +795,16 @@ ul > li {
     }
 }
 
-.clients-bg_mix_vertical {
+.clients-bg.mix_vertical {
     display: none;
 }
 
 @media (min-width: 768px) {
-    .clients-bg_mix_horizontal {
+    .clients-bg.mix_horizontal {
         display: none;
     }
 
-    .clients-bg_mix_vertical {
+    .clients-bg.mix_vertical {
         display: block;
     }
 }
@@ -1007,5 +1036,19 @@ ul > li {
     .lilypad.lilypad-small {
         margin-bottom: -45px;
         width: 160px;
+    }
+}
+
+#site-logo {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    width: 170px;
+}
+
+@media (min-width: 768px) {
+    #site-logo {
+        display: none;
     }
 }

@@ -18,6 +18,10 @@ get_header();
 ?>
 
 <main id="site-content" role="main">
+    <section class="mix_nopad">
+        <img id="site-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logos/lilypad.svg" />
+    </section>
+
     <!-- Growing Leaders -->
     <section class="container">
         <div class="row">
@@ -81,8 +85,8 @@ get_header();
             </div>
             <div class="col-md-4 order-md-first">
                 <div class="clientsWrapper">
-                    <img class="clients-bg clients-bg_mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v1_horizontal.svg" />
-                    <img class="clients-bg clients-bg_mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v1_vertical.svg" />
+                    <img class="clients-bg mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v1_horizontal.svg" />
+                    <img class="clients-bg mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v1_vertical.svg" />
                     <ul class="clients">
                         <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/medtronic.svg" /></li>
                         <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/hazelden.svg" /></li>
@@ -118,8 +122,8 @@ get_header();
             </div>
             <div class="col-md-4 order-md-first">
                 <div class="clientsWrapper">
-                    <img class="clients-bg clients-bg_mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_horizontal.svg" />
-                    <img class="clients-bg clients-bg_mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_vertical.svg" />
+                    <img class="clients-bg mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_horizontal.svg" />
+                    <img class="clients-bg mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_vertical.svg" />
                     <ul class="clients">
                         <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/shelterBox.svg" /></li>
                         <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/healthPartners.svg" /></li>
@@ -155,8 +159,8 @@ get_header();
             </div>
             <div class="col-md-4 order-md-first">
                 <div class="clientsWrapper">
-                    <img class="clients-bg clients-bg_mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_horizontal.svg" />
-                    <img class="clients-bg clients-bg_mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_vertical.svg" />
+                    <img class="clients-bg mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_horizontal.svg" />
+                    <img class="clients-bg mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_vertical.svg" />
                     <ul class="clients">
                         <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/mac.svg" /></li>
                         <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/3m.svg" /></li>
