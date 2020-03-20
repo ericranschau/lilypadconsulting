@@ -174,7 +174,7 @@ get_header();
     <!-- Our Team -->
     <section class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypad.png" />
                 <h5 class="hr">Our Team</h5>
             </div>
@@ -207,7 +207,7 @@ get_header();
     <!-- Community Support -->
     <section class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypad.png" />
                 <h5 class="hr">Community Support</h5>
             </div>
