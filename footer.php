@@ -13,7 +13,7 @@
 
 ?>
         <footer class="" id="site-footer" role="contentinfo">
-            <div id="site-footer-bg"></div>
+			<img id="site-footer-bg" src="<?php echo get_template_directory_uri() ?>/assets/images/footerBg.svg" />
             <div class="container">
 				<div class="row ml-3 ml-md-0 mr-3 mr-md-0">
 					<div class="col-md-5 mb-5 mb-md-0 offset-md-1 position-relative">

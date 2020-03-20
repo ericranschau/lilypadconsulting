@@ -64,7 +64,7 @@ get_header();
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 offset-md-4">
+            <div class="col-md-6">
                 <p>Effective leaders know the value of strengthening and expanding organizational capacity to affect change. Using a systemic and thoughtful approach, our goal is to increase your organization’s effectiveness – through people, processes and systems.</p>
                 <h6>Areas Of Focus</h6>
                 <ul>
@@ -78,6 +78,17 @@ get_header();
                     <li>Employee Engagement</li>
                     <li>Cultural Revitalization</li>
                 </ul>
+            </div>
+            <div class="col-md-4 order-md-first">
+                <div class="clientsWrapper">
+                    <img class="clients-bg clients-bg_mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v1_horizontal.svg" />
+                    <img class="clients-bg clients-bg_mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v1_vertical.svg" />
+                    <ul class="clients">
+                        <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/medtronic.svg" /></li>
+                        <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/hazelden.svg" /></li>
+                        <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/lifetouch.svg" /></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -95,7 +106,7 @@ get_header();
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 offset-md-4">
+            <div class="col-md-6">
                 <p>Your board is critical to the growth and success of your organization. Board governance involves equipping your board to strategically lead, with vision, passion, discernment and productive relationships.</p>
                 <h6>Areas Of Focus</h6>
                 <ul>
@@ -104,6 +115,17 @@ get_header();
                     <li>Board &amp; Committee Structure and Alignment</li>
                     <li>Board &amp; Committee Position Descriptions</li>
                 </ul>
+            </div>
+            <div class="col-md-4 order-md-first">
+                <div class="clientsWrapper">
+                    <img class="clients-bg clients-bg_mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_horizontal.svg" />
+                    <img class="clients-bg clients-bg_mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_vertical.svg" />
+                    <ul class="clients">
+                        <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/shelterBox.svg" /></li>
+                        <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/healthPartners.svg" /></li>
+                        <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/accra.svg" /></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -121,7 +143,7 @@ get_header();
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 offset-md-4">
+            <div class="col-md-6">
                 <p>Charting a vision for the future of your business captures your organization’s hearts and minds. Together, we’ll leverage strategy that aligns people and priorities, strengthens leadership behaviors, broadens perspectives and drives change.</p>
                 <h6>Areas Of Focus</h6>
                 <ul>
@@ -130,6 +152,17 @@ get_header();
                     <li>Implementation Strategies</li>
                     <li>Process Improvement</li>
                 </ul>
+            </div>
+            <div class="col-md-4 order-md-first">
+                <div class="clientsWrapper">
+                    <img class="clients-bg clients-bg_mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_horizontal.svg" />
+                    <img class="clients-bg clients-bg_mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_vertical.svg" />
+                    <ul class="clients">
+                        <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/mac.svg" /></li>
+                        <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/3m.svg" /></li>
+                        <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/artSpace.svg" /></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -144,7 +177,7 @@ get_header();
         </div>
         <div class="row mb-10">
             <div class="col-md-6">
-                <img class="bioPic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO_bio.png" />
+                <img class="bioPic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/bios/grayce.png" />
             </div>
             <div class="col-md-5">
                 <h1 class="heading-size-3">Grayce Belvedere Young</h1>
@@ -156,7 +189,7 @@ get_header();
         </div>
         <div class="row mb-10">
             <div class="col-md-6">
-                <img class="bioPic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO_bio.png" />
+                <img class="bioPic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/bios/grayce.png" />
             </div>
             <div class="col-md-5">
                 <h1 class="heading-size-3">Rachel Belvedere</h1>
@@ -177,7 +210,7 @@ get_header();
         </div>
         <div class="row mb-10">
             <div class="col-md-6">
-            <img class="bioPic" src="" />
+                <img class="bioPic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/bios/culturalJambalaya.png" />
             </div>
             <div class="col-md-5">
                 <h1 class="heading-size-3">Grayce Belvedere Young</h1>
