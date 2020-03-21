@@ -188,7 +188,7 @@ get_header();
                 <p>With over twenty-five years of organizational development and strategic planning expertise, Grayce is deeply passionate about strengthening the capacity of her clients across numerous industries and within the nonprofit world.</p>
                 <p>Prior to her twelve years as a consultant, Grayce held leadership roles at UnitedHealth Group and Thomson-West Group (now Thomson-Reuters).</p>
                 <p>Grayce has lived, worked or traveled in all 50 states, over 55 countries, and all 7 continents. She brings an inquisitive, thoughtful, systemic, and global perspective to all her client engagements.</p>
-                <p class="mt-4"><a class="btn btn-withIcon" href="https://www.linkedin.com" target="_blank">Connect</a></p>
+                <p class="mt-4"><a class="btn btn-withIcon" href="https://www.linkedin.com/in/grayce-belvedere-young/" target="_blank">Connect</a></p>
             </div>
         </div>
         <div class="row mb-10">
@@ -199,7 +199,7 @@ get_header();
                 <h1 class="heading-size-3">Rachel Belvedere</h1>
                 <p>Rachel serves as a client services project manager at Lily Pad Consulting, utilizing her organization skills and creativity to take on tasks related to client services, technology, and business operations.</p>
                 <p>With her passion for social and environmental justice, Rachel is involved in climate justice, multifaith, and women’s leadership groups and works to empower other people to be active citizens in their communities.</p>
-                <p class="mt-4"><a class="btn btn-withIcon" href="https://www.linkedin.com" target="_blank">Connect</a></p>
+                <p class="mt-4"><a class="btn btn-withIcon" href="https://www.linkedin.com/in/rachel-belvedere/" target="_blank">Connect</a></p>
             </div>
         </div>
     </section>
