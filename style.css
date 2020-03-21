@@ -347,23 +347,24 @@ nav {
     background-color: var(--brand-primary);
     color: var(--color-white);
     left: 0px;
-    max-height: 0px;
+    height: 100%;
     overflow: hidden;
     position: fixed;
-    top: 94px;
-    transition: all 0.15s;
+    top: 0px;
+    transform: translateY(-100%);
+    transition: all 0.3s;
     width: 100%;
     z-index: 1;
 }
 
 @media (min-width: 768px) {
     nav {
-        top: 168px;
+        /* top: 168px; */
     }
 }
 
 nav.isOpen {
-    max-height: 800px;
+    transform: translateY(0%);
 }
 
 @media (min-width: 768px) {

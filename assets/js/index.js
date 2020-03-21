@@ -14,12 +14,14 @@ $(function(){
 
     $headerButton.click(function() {
         if (menuIsOpen) {
+            $body.removeClass('overflow-hidden');
             $headerButton.text($headerButton.data('default'));
             $headerLogo.attr('src', $headerLogo.data('default'));
             $nav.removeClass('isOpen').animate({ opacity: 1 }, 150, 'linear', function() {
                 $header.removeClass('isOpen');
             });
         } else {
+            $body.addClass('overflow-hidden');
             $header.addClass('isOpen');
             $headerButton.text($headerButton.data('alt'));
             $headerLogo.attr('src', $headerLogo.data('alt'));
