@@ -1096,6 +1096,23 @@ ul > li {
     }
 }
 
+section#intro {
+    background-color: #F8F9F9;
+    margin-bottom: 180px;
+    position: relative;
+}
+
+section#intro #introBg {
+    background-color: #FFFFFF;
+    bottom: -180px;
+    display: block;
+    height: 181px;
+    left: 50%;
+    margin-left: -818px;
+    position: absolute;
+    width: 1637px;
+}
+
 #site-logo {
     display: block;
     height: auto;
