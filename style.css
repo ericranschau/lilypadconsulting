@@ -384,6 +384,35 @@ nav dl > dd {
     margin-bottom: 1.4rem;
 }
 
+nav .btn.mix_linkedIn {
+    position: relative;
+}
+
+nav .btn.mix_linkedIn::after,
+nav .btn.mix_linkedIn::after {
+    background-color: var(--brand-primary);
+    content: '';
+    display: inline-block;
+    height: 16px;
+    left: 50%;
+    -webkit-mask: url('./assets/images/logos/linkedIn.svg');
+    mask: url('./assets/images/logos/linkedIn.svg');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    margin-left: -8px;
+    margin-top: -8px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transition: opacity 0.15s;
+    width: 16px;
+}
+
+nav .btn.mix_linkedIn:focus::after,
+nav .btn.mix_linkedIn:hover::after {
+    opacity: 1;
+}
+
 @media (min-width: 768px) {
     nav dl > dd {
         font-size: 1.3rem;
@@ -534,9 +563,9 @@ ul > li {
 
 .btn-secondary:focus,
 .btn-secondary:hover {
-    background-color: transparent;
+    background-color: #FFFFFF;
     border: 2px solid var(--color-white);
-    color: var(--color-white);
+    color: var(--brand-primary);
 }
 
 .btn-withIcon {
