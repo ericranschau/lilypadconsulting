@@ -243,7 +243,6 @@ get_header();
                 </div>
             </div>
         </div>
-        <img id="bg-footer" src="<?php echo get_template_directory_uri() ?>/assets/images/introBg.svg" />
     </section>
 </main><!-- #site-content -->
 
