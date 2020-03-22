@@ -18,15 +18,15 @@
 				<div class="row ml-3 ml-md-0 mr-3 mr-md-0">
 					<div class="col-md-5 mb-5 mb-md-0 offset-md-1 position-relative">
 						<h3>Get In Touch</h3>
-						<a class="btn btn-secondary" href="https://www.linkedin.com/company/lily-pad-consulting/about/" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/linkedIn.svg"></a>
+						<a class="btn btn-secondary mix_linkedIn" href="https://www.linkedin.com/company/lily-pad-consulting/about/" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/linkedIn.svg"></a>
 						<small>© 2020 Lily Pad Consulting. All rights reserved</small>
 					</div>
 					<div class="col-md-5">
 						<dl>
 							<dt>Call Us</dt>
-							<dd>(612) 419-4695</dd>
+							<dd><a href="tel:1-612-419-4695">(612) 419-4695</a></dd>
 							<dt>Email Us</dt>
-							<dd>hello@lilypadconsulting.com</dd>
+							<dd><a href="mailto:hello@lilypadconsulting.com">hello@lilypadconsulting.com</a></dd>
 							<dt>Locations</dt>
 							<dd>Minneapolis/St. Paul, MN<br />Phoenix, AZ</dd>
 						</dl>

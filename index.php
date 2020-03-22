@@ -60,6 +60,45 @@ get_header();
         </div>
     </section>
 
+    <!-- Charting Direction -->
+    <section class="graphic graphic-strategy">
+        <div class="container">
+            <div class="row overflow-hidden">
+                <div class="col-md-9 offset-md-2">
+                    <h5 class="hr hr-left">Visioning &amp; Strategy</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-2">
+                    <h1 class="heading-size-1 withMargin">Charting Direction</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Charting a vision for the future of your business captures your organization’s hearts and minds. Together, we’ll leverage strategy that aligns people and priorities, strengthens leadership behaviors, broadens perspectives and drives change.</p>
+                    <h6>Areas Of Focus</h6>
+                    <ul>
+                        <li>Visioning &amp; Dreaming Big</li>
+                        <li>Strategic Planning</li>
+                        <li>Implementation Strategies</li>
+                        <li>Process Improvement</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 order-md-first">
+                    <div class="clientsWrapper">
+                        <img class="clients-bg mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_horizontal.svg" />
+                        <img class="clients-bg mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_vertical.svg" />
+                        <ul class="clients">
+                            <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/mac.svg" /></li>
+                            <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/3m.svg" /></li>
+                            <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/artSpace.svg" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Building Capacity -->
     <section class="graphic graphic-development">
         <div class="container">
@@ -143,45 +182,6 @@ get_header();
         </div>
     </section>
 
-    <!-- Charting Direction -->
-    <section class="graphic graphic-strategy">
-        <div class="container">
-            <div class="row overflow-hidden">
-                <div class="col-md-9 offset-md-2">
-                    <h5 class="hr hr-left">Visioning &amp; Strategy</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10 offset-md-2">
-                    <h1 class="heading-size-1 withMargin">Charting Direction</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Charting a vision for the future of your business captures your organization’s hearts and minds. Together, we’ll leverage strategy that aligns people and priorities, strengthens leadership behaviors, broadens perspectives and drives change.</p>
-                    <h6>Areas Of Focus</h6>
-                    <ul>
-                        <li>Visioning &amp; Dreaming Big</li>
-                        <li>Strategic Planning</li>
-                        <li>Implementation Strategies</li>
-                        <li>Process Improvement</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 order-md-first">
-                    <div class="clientsWrapper">
-                        <img class="clients-bg mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_horizontal.svg" />
-                        <img class="clients-bg mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_v2_vertical.svg" />
-                        <ul class="clients">
-                            <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/mac.svg" /></li>
-                            <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/3m.svg" /></li>
-                            <li class="clients-listItem"><img class="clients-img" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/clients/artSpace.svg" /></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Our Team -->
     <section>
         <div class="container">
@@ -217,13 +217,13 @@ get_header();
         </div>
     </section>
 
-    <!-- Community Support -->
+    <!-- Support Our Community -->
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                     <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypad.png" />
-                    <h5 class="hr">Community Support</h5>
+                    <h5 class="hr">Support Our Community</h5>
                 </div>
             </div>
             <div class="row mb-10">
@@ -235,11 +235,11 @@ get_header();
                     <p>Like years past, Lily Pad Consulting gives back to our community through pro bono services. In 2020, we are proud to be a partner of Cultural Jambalaya, a volunteer-run organization aimed to promote the understanding and respect for all people and all cultures. </p>
                     <h6>Past Partners</h6>
                     <ul>
-                        <li><em>2019:</em>WYCA</li>
-                        <li><em>2018:</em>WYCA</li>
-                        <li><em>2017:</em>Spark-Y</li>
-                        <li><em>2018:</em>Leukemia &amp; Lymphoma Society</li>
-                        <li><em>2015:</em>Camp Fire</li>
+                        <li><em>2019:</em> WYCA</li>
+                        <li><em>2018:</em> WYCA</li>
+                        <li><em>2017:</em> Spark-Y</li>
+                        <li><em>2018:</em> Leukemia &amp; Lymphoma Society</li>
+                        <li><em>2015:</em> Camp Fire</li>
                     </ul>
                 </div>
             </div>
