@@ -101,6 +101,7 @@ blockquote::after {
     --brand-primary:        #405D6F;
     --brand-primary-light:  #577181;
     --brand-secondary:      #A9B240;
+    --background-alt:       #F8F9F9;
     --color-footer:         #D1D8DD;
     --color-footer-hover:   #E0E5E8;
     --color-white:          #FFFFFF;
@@ -369,12 +370,6 @@ nav.isOpen {
     transform: translateY(0%);
 }
 
-@media (min-width: 768px) {
-    body.isScrolled nav {
-        top: 112px;
-    }
-}
-
 nav dl {
     margin-bottom: 0px;
 }
@@ -604,7 +599,9 @@ ul > li {
 /* -------------------------------------------------------------------------- */
 
 #site-header {
-    background-color: var(--color-white);
+    background-color: rgba(255,255,255,0.72);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
     height: auto;
     left: 0px;
     padding: 24px;
@@ -1132,21 +1129,59 @@ ul > li {
 }
 
 section#intro {
-    background-color: #F8F9F9;
+    background-color: var(--background-alt);
     margin-bottom: 180px;
-    overflow: hidden;
     position: relative;
 }
 
-section#intro #introBg {
+section#intro::after {
     background-color: #FFFFFF;
+    background-image: url('./assets/images/sectionBg-footer.svg');
+    background-position: center;
+    background-size: 1637px 181px;
     bottom: -180px;
+    content: '';
     display: block;
-    height: 181px;
-    left: 50%;
-    margin-left: -818px;
+    height: 180px;
+    left: 0px;
     position: absolute;
-    width: 1637px;
+    width: 100%;
+}
+
+section#ourTeam {
+    background-color: var(--background-alt);
+    margin-bottom: 180px;
+    margin-top: 180px;
+    position: relative;
+}
+
+section#ourTeam::after {
+    background-color: #FFFFFF;
+    background-image: url('./assets/images/sectionBg-footer.svg');
+    background-position: center;
+    background-size: 1637px 181px;
+    bottom: -180px;
+    content: '';
+    display: block;
+    height: 180px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+section#ourTeam::before {
+    background-color: #FFFFFF;
+    background-image: url('./assets/images/sectionBg-footer.svg');
+    background-position: center;
+    background-size: 1637px 181px;
+    content: '';
+    display: block;
+    height: 180px;
+    left: 0px;
+    position: absolute;
+    top: -180px;
+    transform: rotate(180deg);
+    width: 100%;
 }
 
 #site-logo {

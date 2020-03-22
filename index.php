@@ -39,7 +39,6 @@ get_header();
                 </div>
             </div>
         </div>
-        <img id="introBg" src="<?php echo get_template_directory_uri() ?>/assets/images/introBg.svg" />
     </section>
 
     <!-- Seizing Opportunities -->
@@ -183,7 +182,7 @@ get_header();
     </section>
 
     <!-- Our Team -->
-    <section>
+    <section id="ourTeam">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -244,6 +243,7 @@ get_header();
                 </div>
             </div>
         </div>
+        <img id="bg-footer" src="<?php echo get_template_directory_uri() ?>/assets/images/introBg.svg" />
     </section>
 </main><!-- #site-content -->
 
