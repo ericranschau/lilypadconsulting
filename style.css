@@ -835,28 +835,24 @@ ul > li {
 
 .clients-bg {
     height: auto;
-    left: -40px;
+    left: 50%;
     position: absolute;
-    right: -40px;
-    top: 0px;
-    width: calc(100% + 40px + 40px);
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 175%;
     z-index: -1;
 }
 
 @media (min-width: 768px) {
     .clients-bg {
-        height: 85%;
-        left: 50%;
-        right: 0px;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        height: 100%;
         width: auto;
     }
 }
 
 @media (min-width: 1200px) {
     .clients-bg {
-        height: 90%;
+        height: 110%;
     }
 }
 
