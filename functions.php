@@ -77,10 +77,7 @@ function lilypadconsulting_register_styles() {
     // Add Bootstrap CSS.
     wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap/bootstrap.css' );
     
-    // Add Custom Fonts CSS.
-	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,700,700i|Lato:400,400i,700,700i|Sorts+Mill+Goudy:400,400i&display=swap');
-
-	wp_enqueue_style( 'lilypadconsulting-style', get_stylesheet_uri(), array(), $theme_version );
+    wp_enqueue_style( 'lilypadconsulting-style', get_stylesheet_uri(), array(), $theme_version );
 
 	// // Add output of Customizer settings as inline style.
 	// wp_add_inline_style( 'lilypadconsulting-style', lilypadconsulting_get_customizer_css( 'front-end' ) );
@@ -105,7 +102,11 @@ function lilypadconsulting_register_scripts() {
     
     // Add Bootstrap JS.
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap/bootstrap.js' );
-    wp_script_add_data( 'bootstrap-js', 'async', true );
+	wp_script_add_data( 'bootstrap-js', 'async', true );
+	
+	// Google Font Loader.
+	wp_enqueue_script('google-font-loader', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
+	wp_enqueue_script( 'google-fonts', get_template_directory_uri() . '/assets/js/fonts.js');
 
 	if ( ( ! is_admin() ) && is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
