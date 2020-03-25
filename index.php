@@ -22,6 +22,27 @@ get_header();
         <img id="site-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logos/lilypad.svg" />
     </section>
 
+    <?php
+    // Query for pages.
+    $args = array(
+        'order' => 'ASC',
+        'post_type' => 'page'
+    );
+
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()) {
+        while ( $query->have_posts() ) {
+            $query->the_post();
+
+            // get_template_part("content", "page");
+        }
+    }
+    
+    // Restore original post data.
+    wp_reset_postdata();
+    ?>
+
     <!-- Growing Leaders -->
     <section id="intro">
         <div class="container">
@@ -42,8 +63,8 @@ get_header();
     </section>
 
     <!-- Seizing Opportunities -->
-    <section class="graphic graphic-left graphic-solutions">
-        <div class="container">
+    <section>
+        <div class="container graphic graphic-left graphic-solutions">
             <div class="row">
                 <div class="col-md-10 offset-md-2">
                     <h1 class="heading-size-1 withMargin">Seizing Opportunities</h1>
@@ -60,8 +81,8 @@ get_header();
     </section>
 
     <!-- Charting Direction -->
-    <section class="graphic graphic-strategy">
-        <div class="container">
+    <section>
+        <div class="container graphic graphic-strategy">
             <div class="row overflow-hidden">
                 <div class="col-md-9 offset-md-2">
                     <h5 class="hr hr-left">Visioning &amp; Strategy</h5>
@@ -99,8 +120,8 @@ get_header();
     </section>
 
     <!-- Building Capacity -->
-    <section class="graphic graphic-development">
-        <div class="container">
+    <section>
+        <div class="container graphic graphic-development">
             <div class="row overflow-hidden">
                 <div class="col-md-9 offset-md-2">
                     <h5 class="hr hr-left">Organization Development</h5>
@@ -116,7 +137,7 @@ get_header();
                     <p>Effective leaders know the value of strengthening and expanding organizational capacity to affect change. Using a systemic and thoughtful approach, our goal is to increase your organization’s effectiveness – through people, processes and systems.</p>
                     <h6>Areas Of Focus</h6>
                     <ul>
-                        <li>Leader Development (Including 360° Assessments, Emotional Intelligence instruments, MBTI certification and Customized Development Programs) </li>
+                        <li>Leader Development (Including 360° Assessments, Emotional Intelligence instruments, MBTI certification and Customized Development Programs)</li>
                         <li>Team Effectiveness</li>
                         <li>Change Strategies</li>
                         <li>Executive Coaching</li>
@@ -143,8 +164,8 @@ get_header();
     </section>
 
     <!-- Equipping Your Board -->
-    <section class="graphic graphic-governance">
-        <div class="container">
+    <section>
+        <div class="container graphic graphic-governance">
             <div class="row overflow-hidden">
                 <div class="col-md-9 offset-md-2">
                     <h5 class="hr hr-left">Board of Director Governance</h5>
@@ -182,7 +203,7 @@ get_header();
     </section>
 
     <!-- Our Team -->
-    <section id="ourTeam">
+    <section id="our-team">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
