@@ -1132,6 +1132,11 @@ ul > li {
     }
 }
 
+.resourcePic {
+    height: auto;
+    width: 100%;
+}
+
 section#intro {
     background-color: var(--background-alt);
     margin-bottom: 180px;

@@ -237,6 +237,53 @@ get_header();
         </div>
     </section>
 
+    <!-- Resources -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypad.png" />
+                    <h3 class="heading-size-5 hr">Support Our Community</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 text-center">
+                    <p>At Lily Pad Consulting, we always strive to learn and share new ideas and solutions with our clients. Below are just a couple of helpful resources and why they are recommend reading.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-4 order-md-last">
+                    <img class="resourcePic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/resources/goodFoodRevolution.png" />
+                </div>
+                <div class="col-12 col-md-7 offset-md-1">
+                    <h3 class="mb-0">The Good Food Revolution</h3>
+                    <p>by Will Allen with Charles Wilson</p>
+                    <p>At the 2018 Gustavus Nobel Conference, I received a book entitled The Good Food Revolution by Will Allen. Mr. Allen chronicles his family’s connection to farming, the land, and his own return to the land by growing food.  His compelling story is of planting urban gardens into a “food desert” neighborhood in Milwaukee and engaging his neighbors to learn to grow healthy food for themselves and their community.  This inspiring book highlights leadership, determination, heartbreak and triumph.  It’s a powerful read! </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-4 order-md-last">
+                    <img class="resourcePic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/resources/visualIntelligence.png" />
+                </div>
+                <div class="col-12 col-md-7 offset-md-1">
+                    <h3 class="mb-0">Visual Intelligence</h3>
+                    <p>by Amy E. Herman</p>
+                    <p>Recently, I heard Amy Herman speak about her book, Visual Intelligence, and the seminars she leads to teach people how to tune in to the world around them in a new and profound way.  Ms. Herman’s book and workshop utilize works of art to engage learners.  The book captures the importance of seeing what matters and the fine art of observation as the foundational elements of improving your visual intelligence.  The book is divided into four sections – Assess, Analyze, Articulate and Adapt – and each section provides real world examples, insights and tips on observation, perception and communication.  What are you missing in your everyday interactions with others and the world?</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-4 order-md-last">
+                    <img class="resourcePic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/resources/howRemarkableWomenLead.png" />
+                </div>
+                <div class="col-12 col-md-7 offset-md-1">
+                    <h3 class="mb-0">How Remarkable Women Lead</h3>
+                    <p>by Joanna Barsh and Susie Cranston</p>
+                    <p>This book showcases women leaders in the business world and community involvement.  The authors share inspiring stories of women, including behaviors, skills and actions that provide a guide for everyone on how to live a fulfilled and successful life and career.  The book is categorized in a system that serves as a roadmap for others.  The categories are: Meaning, Framing, Connecting, Engaging and Energizing.  I was particularly drawn to the Connecting section which offers practical advice on how to build your own network to grow yourself personally and professionally; it’s not about getting a new job.  Building your network builds relationships that offer insights, new ideas, different perspectives; it’s like creating a tapestry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Support Our Community -->
     <section>
         <div class="container">
