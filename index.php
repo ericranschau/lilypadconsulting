@@ -18,8 +18,8 @@ get_header();
 ?>
 
 <main id="site-content" role="main">
-    <section class="mix_nopad">
-        <img id="site-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/logos/lilypad.svg" />
+    <section id="site-logo-mobile">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/lilypad.svg" />
     </section>
 
     <?php
@@ -45,6 +45,7 @@ get_header();
 
     <!-- Growing Leaders -->
     <section id="intro">
+        <img class="bg-footer" src="<?php echo get_template_directory_uri() ?>/assets/images/sectionBg-footer.svg" />
         <div class="container">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
@@ -204,6 +205,8 @@ get_header();
 
     <!-- Our Team -->
     <section id="our-team">
+        <img class="bg-header" src="<?php echo get_template_directory_uri() ?>/assets/images/sectionBg-footer.svg" />
+        <img class="bg-footer" src="<?php echo get_template_directory_uri() ?>/assets/images/sectionBg-footer.svg" />
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -284,13 +287,13 @@ get_header();
         </div>
     </section>
 
-    <!-- Support Our Community -->
+    <!-- Community Support -->
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                     <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypad.png" />
-                    <h5 class="hr">Support Our Community</h5>
+                    <h5 class="hr">Community Support</h5>
                 </div>
             </div>
             <div class="row mb-10">
@@ -298,7 +301,7 @@ get_header();
                     <img class="bioPic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/bios/culturalJambalaya.png" />
                 </div>
                 <div class="col-md-5">
-                    <h1 class="heading-size-3">Grayce Belvedere Young</h1>
+                    <h1 class="heading-size-3">Supporting Our Community</h1>
                     <p>Like years past, Lily Pad Consulting gives back to our community through pro bono services. In 2020, we are proud to be a partner of Cultural Jambalaya, a volunteer-run organization aimed to promote the understanding and respect for all people and all cultures. </p>
                     <h6>Past Partners</h6>
                     <ul>
