@@ -1150,7 +1150,7 @@ section#intro .bg-footer {
 
 section#site-logo-mobile {
     background-color: var(--background-alt);
-    padding-top: 94px;
+    padding-top: calc(94px + 24px);
 }
 
 @media (min-width: 768px) {
