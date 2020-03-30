@@ -246,7 +246,7 @@ get_header();
             <div class="row">
                 <div class="col-12 text-center">
                     <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypad.png" />
-                    <h3 class="heading-size-5 hr">Support Our Community</h5>
+                    <h3 class="heading-size-5 hr">Resources</h5>
                 </div>
             </div>
             <div class="row">

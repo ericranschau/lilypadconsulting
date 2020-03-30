@@ -335,6 +335,10 @@ h6 {
     text-transform: uppercase;
 }
 
+main {
+    overflow: hidden;
+}
+
 nav {
     background-color: var(--brand-primary);
     color: var(--color-white);
@@ -927,7 +931,6 @@ ul > li {
     background-position: right 100px;
     background-repeat: no-repeat;
     background-size: 320px auto;
-    overflow: hidden;
 }
 
 .graphic-left {
