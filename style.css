@@ -927,6 +927,7 @@ ul > li {
     background-position: right 100px;
     background-repeat: no-repeat;
     background-size: 320px auto;
+    overflow: hidden;
 }
 
 .graphic-left {
@@ -1141,11 +1142,10 @@ section#intro {
 section#intro .bg-footer {
     bottom: 0px;
     height: auto;
-    min-width: 1637px;
     position: absolute;
     right: 0px;
     transform: translateY(100%);
-    width: 100%;
+    width: 160%;
 }
 
 section#site-logo-mobile {
@@ -1177,19 +1177,17 @@ section#our-team {
 section#our-team .bg-footer {
     bottom: 0px;
     height: auto;
-    min-width: 1637px;
     position: absolute;
     right: 0px;
     transform: translateY(100%);
-    width: 100%;
+    width: 160%;
 }
 
 section#our-team .bg-header {
     height: auto;
-    min-width: 1637px;
     position: absolute;
     right: 0px;
     top: 0px;
     transform: rotate(180deg) translateY(100%);
-    width: 100%;
+    width: 160%;
 }
