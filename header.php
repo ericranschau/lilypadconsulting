@@ -46,7 +46,7 @@
 					<div class="col-md-5 mb-5 mb-md-0 offset-md-1 position-relative">
 						<h3>Get In Touch</h3>
 						<a class="btn btn-secondary mix_linkedIn" href="https://www.linkedin.com/company/lily-pad-consulting/about/" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/linkedIn.svg" alt="Linked-In"></a>
-						<small>© 2020 Lily Pad Consulting. All rights reserved</small>
+						<small class="d-none d-md-block">© 2020 Lily Pad Consulting. All rights reserved.</small>
 					</div>
 					<div class="col-md-5">
 						<dl>
@@ -57,6 +57,7 @@
 							<dt>Locations</dt>
 							<dd>Minneapolis/St. Paul, MN<br />Phoenix, AZ</dd>
 						</dl>
+						<small class="d-block d-md-none">© 2020 Lily Pad Consulting. All rights reserved.</small>
 					</div>
 				</div>
 			</div>
