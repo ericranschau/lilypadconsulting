@@ -8,8 +8,16 @@ $(function(){
 
     var menuIsOpen = false;
 
+    var testWindowScrollPosition = function() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            $body.addClass('isScrolled');
+        } else {
+            $body.removeClass('isScrolled');
+        }
+    }
+
     $(window).scroll(function() {
-        testWindowScrollPos();
+        testWindowScrollPosition();
     });
 
     $headerButton.click(function() {
@@ -30,12 +38,4 @@ $(function(){
 
         menuIsOpen = !menuIsOpen;
     });
-
-    var testWindowScrollPos = function() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            $body.addClass('isScrolled');
-        } else {
-            $body.removeClass('isScrolled');
-        }
-    }
 });

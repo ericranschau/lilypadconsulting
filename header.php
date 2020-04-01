@@ -42,7 +42,7 @@
         </header>
 		<nav id="nav">
 			<div class="container">
-				<div class="row ml-3 ml-md-0 mr-3 mr-md-0">
+				<div class="row">
 					<div class="col-md-5 mb-5 mb-md-0 offset-md-1 position-relative">
 						<h3>Get In Touch</h3>
 						<a class="btn btn-secondary mix_linkedIn" href="https://www.linkedin.com/company/lily-pad-consulting/about/" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/linkedIn.svg" alt="Linked-In"></a>

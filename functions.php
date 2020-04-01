@@ -95,25 +95,36 @@ add_action( 'wp_enqueue_scripts', 'lilypadconsulting_register_styles' );
 function lilypadconsulting_register_scripts() {
 
 	$theme_version = wp_get_theme()->get( 'Version' );
+	
+	// Google Font Loader.
+	wp_enqueue_script('google-font-loader', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
+    wp_script_add_data( 'google-font-loader', 'async', true );
+	wp_enqueue_script( 'google-fonts', get_template_directory_uri() . '/assets/js/fonts.js');
+    wp_script_add_data( 'google-fonts', 'async', true );
 
     // Add jQuery JS.
     wp_enqueue_script( 'jquery-js', '//code.jquery.com/jquery-3.4.1.min.js' );
     wp_script_add_data( 'jquery-js', 'async', true );
+
+	// ScrollMagic JS.
+	wp_enqueue_script( 'scrollmagic-js', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js' );
+	wp_script_add_data( 'scrollmagic-js', 'async', true );
     
     // Add Bootstrap JS.
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap/bootstrap.js' );
 	wp_script_add_data( 'bootstrap-js', 'async', true );
-	
-	// Google Font Loader.
-	wp_enqueue_script('google-font-loader', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
-	wp_enqueue_script( 'google-fonts', get_template_directory_uri() . '/assets/js/fonts.js');
 
 	if ( ( ! is_admin() ) && is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+	// Lily Pad Generic JS.
 	wp_enqueue_script( 'lilypadconsulting-js', get_template_directory_uri() . '/assets/js/index.js', array(), $theme_version, false );
     wp_script_add_data( 'lilypadconsulting-js', 'async', true );
+
+	// Lily Pad ScrollMagic JS.
+	wp_enqueue_script( 'lilypadconsulting-scrollmagic-js', get_template_directory_uri() . '/assets/js/scrollMagicController.js', array(), $theme_version, false );
+    wp_script_add_data( 'lilypadconsulting-scrollmagic-js', 'async', true );
 
 }
 

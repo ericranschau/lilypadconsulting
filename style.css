@@ -451,9 +451,30 @@ p {
     margin-bottom: 1rem;
 }
 
-section {
+section > .container {
     padding-bottom: 2rem;
     padding-top: 2rem;
+
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+section.isVisible > .container {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
 }
 
 section.mix_nopad {
@@ -684,7 +705,6 @@ ul > li {
 #site-footer {
     background-color: var(--brand-primary);
     color: #FFFFFF;
-    margin-top: 2rem;
     padding: 2rem 0px;
     position: relative;
 }
@@ -1130,6 +1150,23 @@ ul > li {
     width: 100%;
 }
 
+section#community-support {
+    background-color: var(--background-alt);
+    margin-bottom: 0px;
+    margin-top: 180px;
+    padding-bottom: calc(2rem + 180px);
+    position: relative;
+}
+
+section#community-support .bg-header {
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: rotate(180deg) translateY(100%);
+    width: 160%;
+}
+
 section#intro {
     background-color: var(--background-alt);
     margin-bottom: 180px;
@@ -1149,25 +1186,6 @@ section#intro .bg-footer {
     right: 0px;
     transform: translateY(100%);
     width: 160%;
-}
-
-section#site-logo-mobile {
-    background-color: var(--background-alt);
-    padding-top: calc(94px + 24px);
-}
-
-@media (min-width: 768px) {
-    section#site-logo-mobile  {
-        display: none;
-    }
-}
-
-section#site-logo-mobile img {
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    width: 170px;
 }
 
 section#our-team {
@@ -1193,4 +1211,23 @@ section#our-team .bg-header {
     top: 0px;
     transform: rotate(180deg) translateY(100%);
     width: 160%;
+}
+
+section#site-logo-mobile {
+    background-color: var(--background-alt);
+    padding-top: calc(94px + 24px);
+}
+
+@media (min-width: 768px) {
+    section#site-logo-mobile  {
+        display: none;
+    }
+}
+
+section#site-logo-mobile img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    width: 170px;
 }

@@ -228,7 +228,7 @@ get_header();
             </div>
             <div class="row mb-10">
                 <div class="col-md-6">
-                    <img class="bioPic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/bios/grayce.png" />
+                    <img class="bioPic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/bios/rachel.png" />
                 </div>
                 <div class="col-md-5">
                     <h1 class="heading-size-3">Rachel Belvedere</h1>
@@ -246,7 +246,7 @@ get_header();
             <div class="row">
                 <div class="col-12 text-center">
                     <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypad.png" />
-                    <h3 class="heading-size-5 hr">Resources</h5>
+                    <h3 class="heading-size-5 hr mb-4">Resources</h5>
                 </div>
             </div>
             <div class="row">
@@ -254,7 +254,12 @@ get_header();
                     <p>At Lily Pad Consulting, we always strive to learn and share new ideas and solutions with our clients. Below are just a couple of helpful resources and why they are recommend reading.</p>
                 </div>
             </div>
-            <div class="row mt-5">
+    </section>
+
+    <!-- Resources: Book One -->
+    <section>
+        <div class="container">
+            <div class="row">
                 <div class="col-12 col-md-4 order-md-last">
                     <img class="resourcePic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/resources/goodFoodRevolution.png" />
                 </div>
@@ -264,7 +269,13 @@ get_header();
                     <p>At the 2018 Gustavus Nobel Conference, I received a book entitled The Good Food Revolution by Will Allen. Mr. Allen chronicles his family’s connection to farming, the land, and his own return to the land by growing food.  His compelling story is of planting urban gardens into a “food desert” neighborhood in Milwaukee and engaging his neighbors to learn to grow healthy food for themselves and their community.  This inspiring book highlights leadership, determination, heartbreak and triumph.  It’s a powerful read! </p>
                 </div>
             </div>
-            <div class="row mt-5">
+        </div>
+    </section>
+
+    <!-- Resources: Book Two -->
+    <section>
+        <div class="container">
+            <div class="row">
                 <div class="col-12 col-md-4 order-md-last">
                     <img class="resourcePic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/resources/visualIntelligence.png" />
                 </div>
@@ -274,7 +285,13 @@ get_header();
                     <p>Recently, I heard Amy Herman speak about her book, Visual Intelligence, and the seminars she leads to teach people how to tune in to the world around them in a new and profound way.  Ms. Herman’s book and workshop utilize works of art to engage learners.  The book captures the importance of seeing what matters and the fine art of observation as the foundational elements of improving your visual intelligence.  The book is divided into four sections – Assess, Analyze, Articulate and Adapt – and each section provides real world examples, insights and tips on observation, perception and communication.  What are you missing in your everyday interactions with others and the world?</p>
                 </div>
             </div>
-            <div class="row mt-5">
+        </div>
+    </section>
+
+    <!-- Resources: Book Three -->
+    <section>
+        <div class="container">
+            <div class="row">
                 <div class="col-12 col-md-4 order-md-last">
                     <img class="resourcePic" src="<?php echo get_template_directory_uri() ?>/assets/images/FPO/resources/howRemarkableWomenLead.png" />
                 </div>
@@ -288,7 +305,8 @@ get_header();
     </section>
 
     <!-- Community Support -->
-    <section>
+    <section id="community-support">
+        <img class="bg-header" src="<?php echo get_template_directory_uri() ?>/assets/images/sectionBg-footer.svg" />
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
