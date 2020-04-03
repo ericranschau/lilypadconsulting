@@ -45,17 +45,17 @@
 				<div class="row">
 					<div class="col-md-5 mb-5 mb-md-0 offset-md-1 position-relative">
 						<h3>Get In Touch</h3>
-						<a class="btn btn-secondary mix_linkedIn" href="https://www.linkedin.com/company/lily-pad-consulting/about/" target="_blank"><img data-no-retina src="<?php echo get_template_directory_uri() ?>/assets/images/logos/linkedIn.svg" alt="Linked-In"></a>
+						<a class="btn btn-secondary mix_linkedIn" href="<?php echo do_shortcode('[xyz-ihs snippet="CONTACT-LINKEDIN"]'); ?>" target="_blank"><img data-no-retina src="<?php echo get_template_directory_uri() ?>/assets/images/logos/linkedIn.svg" alt="Linked-In"></a>
 						<small class="d-none d-md-block">© <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</small>
 					</div>
 					<div class="col-md-5">
 						<dl>
 							<dt>Call Us</dt>
-							<dd>(612) 419-4695</dd>
+							<dd><a href="tel:<?php echo do_shortcode('[xyz-ihs snippet="CONTACT-PHONE-LINK"]'); ?>"><?php echo do_shortcode('[xyz-ihs snippet="CONTACT-PHONE"]'); ?></a></dd>
 							<dt>Email Us</dt>
-							<dd>hello@lilypadconsulting.com</dd>
+							<dd><a href="mailto:<?php echo do_shortcode('[xyz-ihs snippet="CONTACT-EMAIL"]'); ?>"><?php echo do_shortcode('[xyz-ihs snippet="CONTACT-EMAIL"]'); ?></a></dd>
 							<dt>Locations</dt>
-							<dd>Minneapolis/St. Paul, MN<br />Phoenix, AZ</dd>
+							<dd><?php echo do_shortcode('[xyz-ihs snippet="CONTACT-ADDRESS"]'); ?></dd>
 						</dl>
 						<small class="d-block d-md-none">© <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</small>
 					</div>
