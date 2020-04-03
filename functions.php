@@ -104,7 +104,8 @@ function lilypadconsulting_register_scripts() {
 
     // Add jQuery JS.
     wp_enqueue_script( 'jquery-js', '//code.jquery.com/jquery-3.4.1.min.js' );
-    wp_script_add_data( 'jquery-js', 'async', true );
+	wp_script_add_data( 'jquery-js', 'async', true );
+	
 
 	// ScrollMagic JS.
 	wp_enqueue_script( 'scrollmagic-js', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js' );
@@ -113,6 +114,9 @@ function lilypadconsulting_register_scripts() {
     // Add Bootstrap JS.
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap/bootstrap.js' );
 	wp_script_add_data( 'bootstrap-js', 'async', true );
+	// RetinaJS.
+	wp_enqueue_script( 'retina-js', get_template_directory_uri() . '/assets/js/retina.min.js' );
+	wp_script_add_data( 'retina-js', 'async', true );
 
 	if ( ( ! is_admin() ) && is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

@@ -4,8 +4,8 @@
     $post_slug = $post->post_name;
 ?>
 
-<section id="<?php echo $post_slug ?>" class="graphic graphic-left <?php echo $post_background_graphic ?>">
-    <div class="container">
+<section id="<?php echo $post_slug ?>">
+    <div class="container graphic graphic-left <?php echo $post_background_graphic ?>">
         <div class="row">
             <div class="col-md-10 offset-md-2">
                 <?php the_title( '<h1 class="heading-size-1 withMargin">', '</h1>' ); ?>

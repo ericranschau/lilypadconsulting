@@ -12,8 +12,11 @@ switch ($post_template_type) {
     case 'client-list':
         get_template_part('content', 'section-client-list');
     break;
-    case 'sub-pages':
-        get_template_part('content', 'section-sub-pages');
+    case 'sub-sections':
+        get_template_part('content', 'section-sub-sections');
+    break;
+    case 'sub-rows':
+        get_template_part('content', 'section-sub-rows');
     break;
     default:
         get_template_part('content', 'section-default');

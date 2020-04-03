@@ -1,5 +1,4 @@
 $(function(){
-
     var $body = $('body');
     var $header = $('header');
     var $headerButton = $('#site-header-button');
