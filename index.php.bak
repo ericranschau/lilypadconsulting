@@ -75,7 +75,7 @@ get_header();
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <p>Charting a vision for the future of your business captures your organization’s hearts and minds. Together, we’ll leverage strategy that aligns people and priorities, strengthens leadership behaviors, broadens perspectives and drives change.</p>
+                    <p>Charting a vision for the future of your business captures hearts and minds. Together, we’ll leverage strategy that aligns people and priorities, strengthens leadership behaviors, broadens perspectives and drives change.</p>
                     <h6>Areas Of Focus</h6>
                     <ul>
                         <li>Visioning &amp; Dreaming Big</li>
@@ -190,7 +190,7 @@ get_header();
             <div class="row">
                 <div class="col-12 text-center">
                     <img class="lilypad lilypad-small" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypad.png" />
-                    <h5 class="hr">Our Team</h5>
+                    <h5 class="hr">About Us</h5>
                 </div>
             </div>
             <div class="row mb-10">
@@ -199,7 +199,7 @@ get_header();
                 </div>
                 <div class="col-md-5">
                     <h1 class="heading-size-3">Grayce Belvedere Young</h1>
-                    <p>With over twenty-five years of organizational development and strategic planning expertise, Grayce is deeply passionate about strengthening the capacity of her clients across numerous industries and within the nonprofit world.</p>
+                    <p>With over twenty-five years of organization development and strategic planning expertise, Grayce is deeply passionate about strengthening the capacity of her clients across numerous industries and within the nonprofit world.</p>
                     <p>Prior to her twelve years as a consultant, Grayce held leadership roles at UnitedHealth Group and Thomson-West Group (now Thomson-Reuters).</p>
                     <p>Grayce has lived, worked or traveled in all 50 states, over 55 countries, and all 7 continents. She brings an inquisitive, thoughtful, systemic, and global perspective to all her client engagements.</p>
                     <p class="mt-4"><a class="btn btn-withIcon" href="https://www.linkedin.com/in/grayce-belvedere-young/" target="_blank">Connect</a></p>
@@ -230,7 +230,7 @@ get_header();
             </div>
             <div class="row">
                 <div class="col-12 col-md-8 offset-md-2 text-center">
-                    <p>At Lily Pad Consulting, we always strive to learn and share new ideas and solutions with our clients. Below are just a couple of helpful resources and why they are recommend reading.</p>
+                    <p>At Lily Pad Consulting, we value learning and actively seek new ideas and solutions to share with our clients. Below are just a couple of thought-provoking resources we recommend.</p>
                 </div>
             </div>
     </section>
@@ -302,11 +302,11 @@ get_header();
                     <p>Like years past, Lily Pad Consulting gives back to our community through pro bono services. In 2020, we are proud to be a partner of Cultural Jambalaya, a volunteer-run organization aimed to promote the understanding and respect for all people and all cultures. </p>
                     <h6>Past Partners</h6>
                     <ul>
-                        <li><em>2019:</em> WYCA</li>
-                        <li><em>2018:</em> WYCA</li>
+                        <li><em>2018 &amp; 2019:</em> YWCA St. Paul</li>
                         <li><em>2017:</em> Spark-Y</li>
-                        <li><em>2018:</em> Leukemia &amp; Lymphoma Society</li>
+                        <li><em>2016:</em> Leukemia &amp; Lymphoma Society of MN</li>
                         <li><em>2015:</em> Camp Fire</li>
+                        <li><em>2014:</em> Jeremiah Program</li>
                     </ul>
                 </div>
             </div>

@@ -34,8 +34,8 @@
             </div>
             <div class="col-md-4 order-md-first">
                 <div class="clientsWrapper">
-                    <img class="clients-bg mix_horizontal" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_<?php echo $post_background_graphic_client_list ?>_horizontal.png" />
-                    <img class="clients-bg mix_vertical" src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_<?php echo $post_background_graphic_client_list ?>_vertical.png" />
+                    <img class="clients-bg mix_horizontal" data-no-retina src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_<?php echo $post_background_graphic_client_list ?>_horizontal.png" />
+                    <img class="clients-bg mix_vertical" data-no-retina src="<?php echo get_template_directory_uri() ?>/assets/images/graphics/lilypadBg_<?php echo $post_background_graphic_client_list ?>_vertical.png" />
                     <ul class="clients">
                     <?php foreach ( $attached_images as $image ) : ?>
                         <li class="clients-listItem"><img class="clients-img" data-no-retina src="<?php echo( wp_get_attachment_url($image->ID) ) ?>" /></li>

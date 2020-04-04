@@ -43,10 +43,10 @@
         
         $attached_images = get_posts( $args );
 ?>
-<section>
+<section class="pt-0">
     <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 order-md-last">
+                <div class="col-12 col-md-4 order-md-last text-center">
                     <?php foreach ( $attached_images as $image ) : ?>
                         <img class="resourcePic" data-rjs="3" src="<?php echo( wp_get_attachment_url($image->ID) ) ?>" />
                     <?php endforeach; ?>

@@ -95,6 +95,10 @@ add_action( 'wp_enqueue_scripts', 'lilypadconsulting_register_styles' );
 function lilypadconsulting_register_scripts() {
 
 	$theme_version = wp_get_theme()->get( 'Version' );
+
+	// CSS Variables Polyfill
+	wp_enqueue_script( 'css-polyfill-js', '//cdn.jsdelivr.net/npm/css-vars-ponyfill@2' );
+	wp_script_add_data( 'css-polyfill-js', 'async', true );
 	
 	// Google Font Loader.
 	wp_enqueue_script('google-font-loader', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
@@ -106,7 +110,6 @@ function lilypadconsulting_register_scripts() {
     wp_enqueue_script( 'jquery-js', '//code.jquery.com/jquery-3.4.1.min.js' );
 	wp_script_add_data( 'jquery-js', 'async', true );
 	
-
 	// ScrollMagic JS.
 	wp_enqueue_script( 'scrollmagic-js', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js' );
 	wp_script_add_data( 'scrollmagic-js', 'async', true );
