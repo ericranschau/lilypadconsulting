@@ -117,6 +117,7 @@ function lilypadconsulting_register_scripts() {
     // Add Bootstrap JS.
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap/bootstrap.js' );
 	wp_script_add_data( 'bootstrap-js', 'async', true );
+	
 	// RetinaJS.
 	wp_enqueue_script( 'retina-js', get_template_directory_uri() . '/assets/js/retina.min.js' );
 	wp_script_add_data( 'retina-js', 'async', true );

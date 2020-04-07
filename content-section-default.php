@@ -8,7 +8,7 @@
     <div class="container graphic graphic-left <?php echo $post_background_graphic ?>">
         <div class="row">
             <div class="col-md-10 offset-md-2">
-                <?php the_title( '<h1 class="heading-size-1 withMargin">', '</h1>' ); ?>
+                <?php the_title( '<h1 class="heading-size-1">', '</h1>' ); ?>
             </div>
         </div>
         <div class="row">

@@ -180,9 +180,9 @@ h6,
 
 h1,
 .heading-size-1 {
-	font-size: 2.4rem;
+	font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.1rem;
 }
 
 .heading-size-1 {
@@ -192,24 +192,24 @@ h1,
 @media (min-width: 768px) {
     h1,
     .heading-size-1 {
-        font-size: 4rem;
-        margin-bottom: 2rem;
+        font-size: 2.4rem;
+        margin-bottom: 1.4rem;
     }
 }
 
 @media (min-width: 992px) {
     h1,
     .heading-size-1 {
-        font-size: 6rem;
-        margin-bottom: 3rem;
+        font-size: 3rem;
+        margin-bottom: 1.6rem;
     }
 }
 
 @media (min-width: 1200px) {
     h1,
     .heading-size-1 {
-        font-size: 7.2rem;
-        margin-bottom: 3.6rem;
+        font-size: 4rem;
+        margin-bottom: 2.2rem;
     }
 }
 
@@ -451,9 +451,25 @@ nav .container {
 }
 
 p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+p:last-child {
+    margin-bottom: 0px;
+}
+
+@media (min-width: 992px) {
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    p {
+        font-size: 1rem;
+    }
 }
 
 section > .container {
@@ -821,15 +837,16 @@ ul > li {
 .bioPic {
     box-shadow: 0px 8px 64px 0px rgba(64,93,111,0.32);
     -webkit-box-shadow: 0px 8px 64px 0px rgba(64,93,111,0.32);
+    display: block;
     height: auto;
-    margin: 0 0px 2rem;
+    margin: 0 auto 2rem;
     width: 75%;
 }
 
 @media (min-width: 768px) {
     .bioPic {
-        margin: 0 15px;
-        width: calc(75% - 30px);
+        margin: 0 0 2rem;
+        width: calc(100% - 30px);
     }
 }
 
@@ -1151,8 +1168,17 @@ ul > li {
 }
 
 .resourcePic {
+    display: block;
     height: auto;
+    margin: 0 auto 2rem;
     width: 75%;
+}
+
+@media (min-width: 768px) {
+    .resourcePic {
+        margin: 0px 0px 2rem;
+        width: calc(100% - 30px);
+    }
 }
 
 section#community-support {

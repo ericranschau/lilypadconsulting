@@ -7,6 +7,8 @@ $(function(){
 
     var menuIsOpen = false;
 
+    cssVars();
+
     var testWindowScrollPosition = function() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             $body.addClass('isScrolled');

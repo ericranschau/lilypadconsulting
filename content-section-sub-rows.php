@@ -39,7 +39,7 @@
                 $attached_images = get_posts( $args );
         ?>
         <div class="row mb-10">
-            <div class="col-md-6 text-center">
+            <div class="col-md-5 offset-md-1">
                 <?php foreach ( $attached_images as $image ) : ?>
                     <img class="bioPic" data-rjs="3" src="<?php echo( wp_get_attachment_url($image->ID) ) ?>" />
                 <?php endforeach; ?>
