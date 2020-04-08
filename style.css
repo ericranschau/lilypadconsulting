@@ -965,7 +965,7 @@ ul > li {
 
 @media (min-width: 768px) {
     .clientsWrapper {
-        margin: -80px 0px 0px;
+        margin: -55px 0px 0px;
     }
 }
 
@@ -976,7 +976,7 @@ ul > li {
 }
 
 .graphic-left {
-    background-position: 150% 80px;
+    background-position: left 100px;
 }
 
 .graphic.graphic-development {
@@ -1000,6 +1000,10 @@ ul > li {
         background-position: right 120px;
         background-size: 270px auto;
     }
+
+    .graphic-left {
+        background-position: left 120px !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1008,8 +1012,7 @@ ul > li {
     }
 
     .graphic-left {
-        background-position: left 180px !important;
-        background-size: 270px auto !important;
+        background-position: left 120px !important;
     }
 }
 
@@ -1020,15 +1023,7 @@ ul > li {
     }
 
     .graphic-left {
-        background-position: left 280px !important;
-        background-size: 370px auto !important;
-    }
-}
-
-@media (min-width: 992px) {
-    .graphic-left {
-        background-position: left 330px !important;
-        background-size: 446px auto !important;
+        background-position: left 190px !important;
     }
 }
 
@@ -1192,7 +1187,7 @@ section#community-support {
 section#community-support .bg-header {
     height: auto;
     position: absolute;
-    right: 0px;
+    left: 0px;
     top: 0px;
     transform: rotate(180deg) translateY(100%);
     width: 160%;
@@ -1238,7 +1233,7 @@ section#our-team .bg-footer {
 section#our-team .bg-header {
     height: auto;
     position: absolute;
-    right: 0px;
+    left: 0px;
     top: 0px;
     transform: rotate(180deg) translateY(100%);
     width: 160%;
